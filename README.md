@@ -3,16 +3,15 @@
 # Tetris Game on STM32
 
 ## Project Overview
-This project implements the classic **Tetris** game on an STM32 microcontroller. The game is played on an LCD screen with block movements controlled via buttons or a touchscreen. Randomized block generation, timers, and interrupts are used to provide an engaging gameplay experience.
+This project implements the classic **Tetris** game on an STM32 microcontroller. The game is played on an LCD screen with block movements controlled via buttons. Randomized block generation, timers, and interrupts are used to provide an engaging gameplay experience.
 
 ## Features
 - Randomly generated Tetris blocks using the STM32's RNG (Random Number Generator).
-- Blocks move, rotate, and drop based on user input from:
+- Blocks rotate based on user input from:
   - Buttons.
-  - Touchscreen.
 - Dynamic game state updates on the LCD screen.
 - Timers for gameplay time tracking and scheduled block movements.
-- Real-time scoring and game-over conditions.
+
 
 ## Technical Details
 - **Microcontroller:** STM32
@@ -24,11 +23,9 @@ This project implements the classic **Tetris** game on an STM32 microcontroller.
   5. **Buttons/Touchscreen:** Accepts player input.
 
 ## How to Play
-1. **Objective:** Arrange falling blocks to form complete horizontal lines. Completed lines disappear, and you score points.
+1. **Objective:** Arrange falling blocks to form complete veritcal line.
 2. **Controls:**
-   - **Move Blocks:** Use the left/right buttons or swipe gestures on the touchscreen.
    - **Rotate Blocks:** Press the designated rotation button or tap on the touchscreen.
-   - **Drop Blocks:** Press the "down" button or swipe down on the touchscreen.
 3. **Game Over:** The game ends when the blocks stack to the top of the screen.
 
 ## Project Structure
@@ -54,10 +51,10 @@ This project implements the classic **Tetris** game on an STM32 microcontroller.
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/tetris-stm32.git
-2. Open the project in STM32CubeIDE.
+2. Open the project in STM32CubeIDE use .ioc file to configure.
 3. Build and flash the program to your STM32 board.
 4. Ensure all dependencies (HAL libraries, FreeRTOS if used) are included in the project.
 5. Use STM32CubeIDE to compile and flash the code onto the microcontroller.
 
 ### Credits
-Developed by Francesca Tenney as part of a final project for embedded systems(ECEN 2370-010) at CU Boulder. Inspired by the original Tetris game created by Alexey Pajitnov.
+Developed by Francesca Tenney as part of a final project for embedded systems (ECEN 2370) at CU Boulder. Inspired by the original Tetris game created by Alexey Pajitnov.
