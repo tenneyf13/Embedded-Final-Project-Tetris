@@ -31,10 +31,10 @@ This project implements the classic **Tetris** game on an STM32 microcontroller.
 ## Project Structure
 - **Source Code Files:**
   - `main.c`: Core game logic and setup.
-  - `rng.c`: RNG configuration for block generation.
-  - `lcd.c`: Handles LCD display updates.
-  - `timers.c`: Timer configurations for gameplay timing.
-  - `input.c`: Handles button and touchscreen inputs.
+  - `ApplicationCode.c`: Init Interrupts, LTCD, and LCDTouch. IRQHandlers for screen and button.
+  - `ButtonDriver.c`: Int button interrupt and check if button is pressed or not. 
+  - `LCD_Driver.c`: Handles LCD display updates. Draws the blocks and rotates them.
+  - `Scheduler.c`: adds and removes schedule events. 
 - **Header Files:**
   - `game.h`: Game state definitions and functions.
   - `blocks.h`: Tetris block shapes and data structures.
