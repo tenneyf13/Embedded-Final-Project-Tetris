@@ -36,8 +36,7 @@ This project implements the classic **Tetris** game on an STM32 microcontroller.
   - `LCD_Driver.c`: Handles LCD display updates. Draws the blocks and rotates them.
   - `Scheduler.c`: adds and removes schedule events. 
 - **Header Files:**
-  - `game.h`: Game state definitions and functions.
-  - `blocks.h`: Tetris block shapes and data structures.
+ - all source files above have a corresponding header file. 
 
 ## Setup Instructions
 
